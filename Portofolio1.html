@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Creative & Rider</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS (Animate on Scroll) Library untuk animasi ala Apple -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #030712; /* Dark slate/blue deep background */
+            color: #f8fafc;
+        }
+    </style>
+</head>
+<body class="selection:bg-blue-500 selection:text-white overflow-x-hidden">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 w-full bg-slate-950/70 backdrop-blur-md z-50 border-b border-slate-800/60">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-lg tracking-wider text-blue-400">PORTFOLIO<span class="text-white">.</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-blue-400 transition">Tentang</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Keahlian</a>
+                <a href="#interests" class="hover:text-blue-400 transition">Minat & Hobi</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Kontak</a>
+            </div>
+            <a href="#contact" class="hidden md:inline-block px-4 py-2 text-xs font-semibold uppercase tracking-wider bg-blue-500 hover:bg-blue-600 text-slate-950 rounded-full transition shadow-lg shadow-blue-500/20">Hubungi Saya</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="min-h-screen flex items-center justify-center pt-20 px-6 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-950 via-slate-950 to-slate-950 relative">
+        <!-- Efek Glow Background -->
+        <div class="absolute w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10" data-aos="fade-up" data-aos-duration="1000">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 text-blue-400 text-xs font-semibold tracking-widest uppercase mb-4 border border-blue-500/20">
+                Creative Explorer & Rider
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                Halo, Saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-300">Muhammad Darwis Harits A.</span>
+            </h1>
+            <p class="text-slate-400 text-base md:text-lg max-w-2xl mx-auto mb-8 font-light leading-relaxed">
+                Seorang penjelajah jalanan, pencinta alam, dan kreator digital yang antusias menuangkan pengalaman petualangan ke dalam karya visual yang bermakna.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="px-8 py-3 rounded-xl bg-blue-500 text-slate-950 font-semibold hover:bg-blue-400 transition shadow-lg shadow-blue-500/25">
+                    Ajak Kolaborasi
+                </a>
+                <a href="#about" class="px-8 py-3 rounded-xl bg-slate-900 text-slate-200 font-semibold hover:bg-slate-800 transition border border-slate-800">
+                    Kenali Saya
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 px-6 bg-slate-900/30">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right" data-aos-duration="800">
+                <h2 class="text-3xl font-bold tracking-tight mb-6 text-white">Tentang <span class="text-blue-400">Saya</span></h2>
+                <p class="text-slate-300 leading-relaxed mb-4">
+                    Saya memiliki ketertarikan mendalam pada dunia visual, desain, serta eksplorasi luar ruangan. Keseimbangan antara kesibukan digital dan petualangan di alam terbuka memberikan perspektif unik dalam setiap karya dan aktivitas yang saya jalani.
+                </p>
+                <p class="text-slate-400 leading-relaxed mb-6">
+                    Baik itu menaklukkan jalur pendakian gunung, melakukan perjalanan jauh dengan sepeda motor, atau meracik estetika desain grafis dan konten digital, saya selalu menikmati proses kreatif di baliknya.
+                </p>
+                <div class="grid grid-cols-2 gap-4 text-sm">
+                    <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                        <span class="block text-blue-400 font-bold text-lg mb-1">Eksplorasi</span>
+                        <span class="text-slate-400">Hiking & Touring Motor</span>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                        <span class="block text-blue-400 font-bold text-lg mb-1">Kreatif</span>
+                        <span class="text-slate-400">Desain & Konten Visual</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative" data-aos="fade-left" data-aos-duration="800">
+                <div class="w-full h-80 rounded-2xl bg-gradient-to-br from-blue-500/20 to-indigo-500/10 border border-blue-500/30 flex items-center justify-center p-8 text-center relative overflow-hidden group shadow-2xl">
+                    <div class="absolute inset-0 bg-[url('https://6aad01abe86d4c28a058c63e.imgix.net/sandbox/1784889738754.jpg?ar=16:9&fit=crop&crop=faces&auto=compress')] bg-cover bg-center opacity-30 group-hover:scale-105 transition duration-700"></div>
+                    <div class="relative z-10">
+                        <i class="fa-solid fa-motorcycle text-5xl text-blue-400 mb-4 animate-bounce"></i>
+                        <h3 class="text-xl font-bold text-white">Always Ready for the Next Journey</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="800">
+                <h2 class="text-3xl font-bold tracking-tight mb-4 text-white">Keahlian & <span class="text-blue-400">Tools</span></h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Perangkat dan bidang yang biasa saya gunakan dalam mendukung proses kreatif sehari-hari.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-blue-500/50 transition transform hover:-translate-y-1 duration-300" data-aos="fade-up" data-aos-duration="600">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Desain Visual</h3>
+                    <p class="text-slate-400 text-sm">Penggunaan tools modern seperti Canva, Adobe Express, dan pengeditan warna foto menggunakan Lightroom presets.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-blue-500/50 transition transform hover:-translate-y-1 duration-300" data-aos="fade-up" data-aos-duration="800">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Video Editing</h3>
+                    <p class="text-slate-400 text-sm">Merangkai momen perjalanan dan video kreatif menggunakan aplikasi seperti CapCut.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-blue-500/50 transition transform hover:-translate-y-1 duration-300" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-white">Navigasi & Perjalanan</h3>
+                    <p class="text-slate-400 text-sm">Pengalaman luas dalam merencanakan perjalanan jarak jauh, navigasi medan, dan manajemen logistik alam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERESTS & HOBBIES -->
+    <section id="interests" class="py-24 px-6 bg-slate-900/30">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up" data-aos-duration="800">
+                <h2 class="text-3xl font-bold tracking-tight mb-4 text-white">Minat & <span class="text-blue-400">Aktivitas</span></h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Hal-hal yang membentuk karakter dan mengisi waktu luang saya.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 text-center hover:bg-slate-900 transition" data-aos="zoom-in" data-aos-duration="500">
+                    <i class="fa-solid fa-motorcycle text-3xl text-blue-400 mb-3"></i>
+                    <h4 class="font-bold text-white mb-1">Riding & Touring</h4>
+                    <p class="text-slate-400 text-xs">Menjelajahi rute baru dengan sepeda motor.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 text-center hover:bg-slate-900 transition" data-aos="zoom-in" data-aos-duration="700">
+                    <i class="fa-solid fa-mountain text-3xl text-blue-400 mb-3"></i>
+                    <h4 class="font-bold text-white mb-1">Hiking & Trekking</h4>
+                    <p class="text-slate-400 text-xs">Mendaki gunung dan menikmati alam terbuka.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 text-center hover:bg-slate-900 transition" data-aos="zoom-in" data-aos-duration="900">
+                    <i class="fa-solid fa-campground text-3xl text-blue-400 mb-3"></i>
+                    <h4 class="font-bold text-white mb-1">Camping</h4>
+                    <p class="text-slate-400 text-xs">Menyatu dengan alam di bawah bintang.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 text-center hover:bg-slate-900 transition" data-aos="zoom-in" data-aos-duration="1100">
+                    <i class="fa-solid fa-mug-hot text-3xl text-blue-400 mb-3"></i>
+                    <h4 class="font-bold text-white mb-1">Coffee Time</h4>
+                    <p class="text-slate-400 text-xs">Menikmati kopi santai di sela aktivitas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 px-6">
+        <div class="max-w-3xl mx-auto text-center bg-slate-900 border border-slate-800 p-8 md:p-12 rounded-3xl relative overflow-hidden shadow-2xl" data-aos="fade-up" data-aos-duration="900">
+            <div class="absolute -right-20 -top-20 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
+            <h2 class="text-3xl font-bold tracking-tight mb-4 text-white">Mari Terhubung!</h2>
+            <p class="text-slate-400 mb-8 max-w-md mx-auto">Punya proyek menarik, rencana riding bareng, atau sekadar ingin ngobrol santai? Silakan hubungi saya.</p>
+            
+            <!-- TOMBOL SOSIAL MEDIA -->
+            <div class="flex justify-center space-x-4 sm:space-x-6 text-2xl mb-8">
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/drws.hrs/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-blue-500 hover:text-slate-950 transition transform hover:scale-110" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <!-- TikTok -->
+                <a href="https://www.tiktok.com/@drws.hrs" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-blue-500 hover:text-slate-950 transition transform hover:scale-110" title="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://wa.me/6285704238724" target="_blank" rel="noopener noreferrer" class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-blue-500 hover:text-slate-950 transition transform hover:scale-110" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <a href="mailto:darwisharis.30@gmail.com" class="inline-block px-8 py-3 bg-blue-500 hover:bg-blue-400 text-slate-950 font-semibold rounded-xl transition shadow-lg shadow-blue-500/25">Kirim Pesan Email</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-slate-800/80 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 ressss.studio. All rights reserved.</p>
+    </footer>
+
+    <!-- AOS JS Library Initializer -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true, // Animasi hanya berjalan sekali saat di-scroll
+            offset: 100, // Jarak trigger animasi dari bawah layar
+        });
+    </script>
+</body>
+</html>
